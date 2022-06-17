@@ -467,7 +467,7 @@
                     </div>
                     <div class="news__text">
                         <a href="">CREATIVITY</a>
-                        <a href="">Sexbots and cybersex: Kate Davis explores “relationship replacements”
+                        <a href="">Sexbots and cybersex: Kate Davis <br> explores “relationship <br> replacements”
                         </a>
                         <p>January 15, 2018</p>
                     </div>
@@ -639,11 +639,11 @@
     <script>
         $(document).ready(function () {
             $('.services__content').slick({
-                infinite: true,
+                infinite: false,
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 dots: true,
-                arrows: true,
+                arrows: false,
                 // autoplay: true,
             });
         });
@@ -653,10 +653,12 @@
         $('.footer__top-content').slick({
             dots: false,
             infinite: true,
-            speed: 300,
+            speed: 500,
             slidesToShow: 1,
             adaptiveHeight: false,
             autoplay: true,
+            fade: true,
+            cssEase: 'linear'
         });
     </script>
     <script src="./js/textTyping.js"></script>
