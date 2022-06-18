@@ -496,11 +496,6 @@ li {
     margin-bottom: 65px;
 }
 
-.portfolio__item img{
-    width: 100%;
-    height: 100%;
-}
-
 .portfolio__item{
     position: relative;
     transition: all 0.5s;
@@ -521,6 +516,7 @@ li {
     font-weight: 600;
     line-height: 1.3;
 }
+
 
 .portfolio__item::before{
     content: "";
@@ -553,11 +549,15 @@ li {
 }
 
 .portfolio__item:hover::before{
-    opacity: 0.5;
+    opacity: 0.8;
 }
-
 .portfolio__item:hover{
     transform: scale(1.05);
+}
+
+.portfolio__item img{
+    width: 100%;
+    display: block;
 }
 
 .portfolio__load{
